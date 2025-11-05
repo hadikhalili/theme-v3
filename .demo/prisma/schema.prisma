@@ -1,0 +1,196 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               Int            @id @default(autoincrement())
+  username         String         @unique @map("user_name")
+  email            String         @unique @map("user_email")
+  password         String         @map("user_password")
+  googleId         String?        @unique
+  name             String?        @map("full_name")
+  firstName        String?        @map("first_name")
+  lastName         String?        @map("last_name")
+  profilePicture   String?        @map("profile_pic")
+  role             String?        @map("user_role")
+  location         String?        @map("user_location")
+  bio              String?        @map("user_bio")
+  experience       String?        @map("user_experience")
+  firstJob         Boolean?       @map("first_job")
+  flexible         Boolean?       @map("flexible_work")
+  remote           Boolean?       @map("remote_work")
+  facebook         String?        @map("facebook_url")
+  twitter          String?        @map("twitter_url")
+  dribbble         String?        @map("dribbble_url")
+  instagram        String?        @map("instagram_url")
+  github           String?        @map("github_url")
+  gitlab           String?        @map("gitlab_url")
+  lastLogin        DateTime?      @map("last_login_at")
+  lastActivity     DateTime?      @map("last_activity_at")
+  isActive         Boolean        @default(true) @map("is_active")
+  isAdmin          Boolean        @default(false) @map("is_admin")
+  verificationCode String         @unique @map("verification_code")
+  referralCode     String?        @unique @map("referral_code")
+  credit           Int            @default(0) @map("user_credit")
+  referredById     Int?           @map("referred_by_id")
+  referredBy       User?          @relation("UserReferrals", fields: [referredById], references: [id])
+  referrals        User[]         @relation("UserReferrals")
+  createdAt        DateTime       @default(now()) @map("created_at")
+  updatedAt        DateTime       @updatedAt @map("updated_at")
+  chats            Chats[]
+  Messages         Messages[]
+  UsageLimits      Usage_limits[]
+  Transactions     Transactions[]
+  ApiKeys          Api_keys[]
+  refreshTokens    RefreshToken[]
+  settings         Settings?
+  logs             UserLogs[]
+}
+
+model Chats {
+  id           Int           @id @default(autoincrement())
+  title        String
+  user         User          @relation(fields: [userId], references: [id])
+  userId       Int           @map("user_id")
+  apiProvider  String?       @map("api_provider")
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+  Messages     Messages[]
+  UsageLimits  Usage_limits? @relation(fields: [usageLimitId], references: [id])
+  usageLimitId Int?          @map("usage_limit_id")
+}
+
+model Messages {
+  id                Int      @id @default(autoincrement())
+  title             String
+  user              User     @relation(fields: [senderId], references: [id])
+  senderId          Int      @map("sender_id")
+  content           String   @db.LongText
+  apiResponse       String?  @map("api_response") @db.LongText
+  attachments       Json?
+  apiRequestTokens  Int      @map("api_request_tokens")
+  apiResponseTokens Int      @map("api_response_tokens")
+  isBotMessage      Boolean  @default(true)
+  chats             Chats    @relation(fields: [chatId], references: [id])
+  chatId            Int      @map("chat_id")
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @updatedAt @map("updated_at")
+}
+
+// model Attachments {
+//   id         Int      @id @default(autoincrement())
+//   message    Messages @relation(fields: [messageId], references: [id])
+//   messageId  Int      @map("message_id")
+//   type       String   @map("attachment_type")
+//   url        String   @map("attachment_url")
+//   name       String   @map("attachment_name")
+//   createdAt  DateTime @default(now()) @map("created_at")
+// }
+
+model Usage_limits {
+  id           Int      @id @default(autoincrement())
+  user         User     @relation(fields: [userId], references: [id])
+  userId       Int      @map("user_id")
+  plan         Plans    @relation(fields: [planId], references: [id])
+  planId       Int      @map("plan_id")
+  maxMessages  Int      @map("max_messages")
+  messagesUsed Int      @map("messages_used")
+  maxTokens    Int      @map("max_tokens")
+  tokensUsed   Int      @map("tokens_used")
+  startDate    DateTime @map("start_date")
+  endDate      DateTime @map("end_date")
+  isActive     Boolean  @default(true) @map("is_active")
+  apiProvider  String   @map("api_provider")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+  chats        Chats[]
+
+  @@unique([userId, apiProvider])
+}
+
+model Plans {
+  id           Int            @id @default(autoincrement())
+  name         String         @db.VarChar(255)
+  price        Decimal        @db.Decimal(10, 2)
+  maxMessages  Int            @map("max_messages")
+  maxTokens    Int            @map("max_tokens")
+  duration     Int
+  features     String         @db.Text
+  modelConfig  String         @map("model_config") @db.Text
+  createdAt    DateTime       @default(now()) @map("created_at")
+  updatedAt    DateTime       @updatedAt @map("updated_at")
+  usageLimits  Usage_limits[]
+  Transactions Transactions[]
+}
+
+model Transactions {
+  id             Int      @id @default(autoincrement())
+  user           User     @relation(fields: [userId], references: [id])
+  userId         Int      @map("user_id")
+  plan           Plans    @relation(fields: [planId], references: [id])
+  planId         Int      @map("plan_id")
+  amount         Decimal  @db.Decimal(10, 2)
+  transactionId  String   @unique @map("transaction_id")
+  paymentGateway String   @map("payment_gateway")
+  status         String
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+}
+
+model Api_keys {
+  id          Int      @id @default(autoincrement())
+  user        User     @relation(fields: [userId], references: [id])
+  userId      Int      @map("user_id")
+  apiKey      String   @map("api_key")
+  apiProvider String   @map("api_provider")
+  isActive    Boolean  @map("is_active")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@unique([userId, apiProvider])
+}
+
+model RefreshToken {
+  id        Int      @id @default(autoincrement())
+  token     String   @unique
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now()) @map("created_at")
+  expiresAt DateTime
+}
+
+model Settings {
+  id                   Int      @id @default(autoincrement())
+  userId               Int      @unique @map("user_id")
+  twoFactorEnabled     Boolean  @default(false) @map("two_factor_enabled")
+  phoneNumber          String?  @map("phone_number")
+  notificationsEnabled Boolean  @default(true) @map("notifications_enabled")
+  flushLowPriority     Boolean  @default(true) @map("flush_low_priority")
+  marketing            Boolean  @default(false) @map("marketing_notifications")
+  partners             Boolean  @default(false) @map("partners_notifications")
+  user                 User     @relation(fields: [userId], references: [id])
+  createdAt            DateTime @default(now()) @map("created_at")
+  updatedAt            DateTime @updatedAt @map("updated_at")
+}
+
+model UserLogs {
+  id          Int      @id @default(autoincrement())
+  user        User     @relation(fields: [userId], references: [id])
+  userId      Int      @map("user_id")
+  action      String   @map("action")
+  description String?  @map("description")
+  createdAt   DateTime @default(now()) @map("created_at")
+}
+
+model Models {
+  id        Int      @id @default(autoincrement())
+  title     String
+  sort      Int
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+}
