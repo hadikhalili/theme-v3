@@ -1,5 +1,69 @@
-export default defineEventHandler(async () => {
-  return await getDemoData()
+import { PrismaClient } from '@prisma/client'
+import { defineEventHandler, getQuery } from 'h3'
+
+const prisma = new PrismaClient()
+
+export default defineEventHandler(async (event) => {
+  const baseData = await getDemoData()
+  const query = getQuery(event)
+  const userIdRaw = query.userId as string | undefined
+  const userId = userIdRaw ? Number.parseInt(userIdRaw, 10) : undefined
+
+  try {
+    if (!userId || Number.isNaN(userId)) {
+      return baseData
+    }
+
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      include: {
+        referredBy: {
+          select: { referralCode: true },
+        },
+      },
+    })
+    if (!user) {
+      return baseData
+    }
+
+    const baseProfile = (baseData as Record<string, any>).profile ?? {}
+    const userRecord = user as { referralCode?: string | null, credit?: number | null, referredBy?: { referralCode?: string | null } | null }
+    const referralCode = userRecord.referralCode ?? baseProfile.referralCode ?? ''
+    const credit = userRecord.credit ?? baseProfile.credit ?? 0
+    const referredByCode = userRecord.referredBy?.referralCode ?? baseProfile.referredByCode ?? null
+
+    return {
+      ...baseData,
+      personalInfo: {
+        ...baseData.personalInfo,
+        firstName: user.firstName ?? baseData.personalInfo?.firstName ?? '',
+        lastName: user.lastName ?? baseData.personalInfo?.lastName ?? '',
+        role: user.role ?? baseData.personalInfo?.role ?? '',
+        picture: user.profilePicture ?? baseData.personalInfo?.picture ?? null,
+        referralCode,
+        credit,
+        referredByCode,
+      },
+      profile: {
+        ...baseProfile,
+        firstName: user.firstName ?? baseProfile.firstName ?? baseData.personalInfo?.firstName ?? '',
+        lastName: user.lastName ?? baseProfile.lastName ?? baseData.personalInfo?.lastName ?? '',
+        role: user.role ?? baseProfile.role ?? baseData.personalInfo?.role ?? '',
+        location: user.location ?? baseProfile.location ?? null,
+        bio: user.bio ?? baseProfile.bio ?? null,
+        referralCode,
+        credit,
+        referredByCode,
+      },
+    }
+  }
+  catch (error) {
+    console.warn('[profile] Falling back to demo data due to error:', error)
+    return baseData
+  }
+  finally {
+    await prisma.$disconnect()
+  }
 })
 
 async function getDemoData() {
@@ -10,6 +74,9 @@ async function getDemoData() {
       picture: '/img/avatars/2.svg',
       badge: '/img/icons/flags/united-states-of-america.svg',
       role: 'مدیر محصول',
+      referralCode: '',
+      credit: 0,
+      referredByCode: null,
       shortBio:
         'سلام به همه، من یک مدیر محصول از نیویورک هستم و به دنبال فرصت‌های جدید در صنعت نرم‌افزار می‌گردم.',
       longBio:
@@ -280,6 +347,16 @@ async function getDemoData() {
           date: '۱۲ اسفند ۱۴۰۱',
         },
       ],
+    },
+    profile: {
+      firstName: 'U.OUOO',
+      lastName: 'OµU^O3U?U,UOU+UO',
+      role: 'U.O_UOO U.O-OµU^U,',
+      location: 'U?OO?U^UOU,UO',
+      bio: '',
+      referralCode: '',
+      credit: 0,
+      referredByCode: null,
     },
     notifications: true,
   })

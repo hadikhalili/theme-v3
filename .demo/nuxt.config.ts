@@ -133,9 +133,9 @@ export default defineNuxtConfig({
 
   // nuxt behavior configuration
   runtimeConfig: {
-    // databaseUrl: '', // process.env.DATABASE_URL,
+    databaseUrl: process.env.DATABASE_URL,
     // openaiApiKey: '', // process.env.OPENAI_API_KEY,
-    // jwtSecret: '',
+    jwtSecret: process.env.NUXT_JWT_SECRET,
     public: {
       // mapbox config
       mapboxToken: '', // set it via NUXT_PUBLIC_MAPBOX_TOKEN env

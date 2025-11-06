@@ -73,6 +73,15 @@ useHead({
 
 <template>
   <div>
+    <Notivue v-slot="item">
+      <Notification
+        :item="item"
+        :theme="pastelTheme"
+        :icons="outlinedIcons"
+      >
+        <NotificationProgress :item="item" />
+      </Notification>
+    </Notivue>
     <!--
       Global app search modal
       @see .demo/components/DemoAppSearch.vue

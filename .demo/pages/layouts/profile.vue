@@ -452,7 +452,7 @@ const { data, pending, error, refresh } = await useFetch('/api/profile')
                       rounded="full"
                       data-nui-tooltip="مشاهده پروفایل"
                     >
-                      <Icon name="lucide:arrow-right" class="rtl:rotate-180 size-4" />
+                      <Icon name="lucide:arrow-right" class="size-4 rtl:rotate-180" />
                     </BaseButtonIcon>
                   </div>
                 </div>
