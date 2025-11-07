@@ -1,0 +1,11 @@
+{
+    "disks": [
+        {
+            "name": "prisma",
+            "mountTo": ".demo/prisma/migrations"
+        }
+    ],
+    "node": {
+        "version": "20"
+    }
+}

@@ -44,7 +44,6 @@
     "mapbox-gl": "3.3.0",
     "nuxt": "3.11.2",
     "nuxt-swiper": "1.2.2",
-    "prisma": "^6.18.0",
     "rehype-external-links": "3.0.0",
     "rehype-raw": "7.0.0",
     "rehype-sanitize": "6.0.0",
@@ -80,6 +79,7 @@
     "openai": "^6.8.1",
     "pinia": "2.2.4",
     "pinia-plugin-persistedstate": "^4.4.1",
+    "prisma": "^6.18.0",
     "ts-node": "^10.9.2",
     "vue3-google-signin": "^2.1.1"
   }

@@ -15,9 +15,9 @@
     "layers/*"
   ],
   "scripts": {
-    "dev": "pnpm --filter=app dev",
-    "build": "pnpm --filter=app build",
-    "generate": "pnpm --filter=app generate",
+    "dev": "pnpm --filter=demo dev",
+    "build": "npx --filter=demo prisma generate --schema=.demo/prisma/schema.prisma",
+    "generate": "pnpm --filter=demo generate",
     "demo:dev": "pnpm --filter=demo dev",
     "demo:build": "pnpm --filter=demo build",
     "clean:all": "pnpm -r clean && rimraf .nuxt .output node_modules",
@@ -26,7 +26,8 @@
     "test:lint": "eslint .",
     "lint": "run-s lint:eslint:fix lint:eslint:fix-demo",
     "lint:eslint:fix": "eslint --fix .",
-    "lint:eslint:fix-demo": "eslint -c layers/documentation/examples/.eslintrc.cjs --fix layers/documentation/examples"
+    "lint:eslint:fix-demo": "eslint -c layers/documentation/examples/.eslintrc.cjs --fix layers/documentation/examples",
+    "start": "node .demo/.output/server/index.mjs"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^1.5.4",
