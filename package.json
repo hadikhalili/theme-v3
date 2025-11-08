@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "dev": "pnpm --filter=demo dev",
-    "build": "npx --filter=demo prisma generate --schema=.demo/prisma/schema.prisma",
+    "build": "pnpm --filter=app build",
     "generate": "pnpm --filter=demo generate",
     "demo:dev": "pnpm --filter=demo dev",
     "demo:build": "pnpm --filter=demo build",
@@ -27,7 +27,7 @@
     "lint": "run-s lint:eslint:fix lint:eslint:fix-demo",
     "lint:eslint:fix": "eslint --fix .",
     "lint:eslint:fix-demo": "eslint -c layers/documentation/examples/.eslintrc.cjs --fix layers/documentation/examples",
-    "start": "node .demo/.output/server/index.mjs"
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^1.5.4",
@@ -44,6 +44,10 @@
     "tailwindcss": "3.4.3",
     "typescript": "5.4.5",
     "vue-tsc": "2.0.12"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.18.0",
+    "prisma": "^6.18.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
