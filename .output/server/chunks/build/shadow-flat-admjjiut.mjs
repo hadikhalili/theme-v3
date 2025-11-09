@@ -1,0 +1,3 @@
+const shadowFlat = '<template>\n  <div class="flex flex-wrap items-end gap-4">\n    <BaseButton shadow="flat">\n      Button\n    </BaseButton>\n\n    <BaseButton color="primary" shadow="flat">\n      Button\n    </BaseButton>\n\n    <BaseButton color="success" shadow="flat">\n      Button\n    </BaseButton>\n\n    <BaseButton color="info" shadow="flat">\n      Button\n    </BaseButton>\n\n    <BaseButton color="warning" shadow="flat">\n      Button\n    </BaseButton>\n\n    <BaseButton color="danger" shadow="flat">\n      Button\n    </BaseButton>\n  </div>\n</template>\n';
+
+export { shadowFlat as default };

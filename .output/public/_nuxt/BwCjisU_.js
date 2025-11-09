@@ -1,0 +1,1 @@
+import{r as t}from"./Lb8tNqB9.js";import{M as r,c as o,e as s}from"./IEdULTv5.js";import"./nBvaaqy8.js";/* empty css        */const c={},n={class:"relative mb-8 space-y-2",style:{"counter-reset":"step 0"}};function a(e,i){return o(),s("div",n,[t(e.$slots,"default",{unwrap:"p"})])}const d=r(c,[["render",a]]);export{d as default};

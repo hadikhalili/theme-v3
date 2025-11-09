@@ -1,0 +1,3 @@
+const pastel = '<template>\n  <div class="flex flex-wrap items-end gap-2">\n    <BaseButton variant="pastel">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="pastel" color="muted">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="pastel" color="primary">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="pastel" color="success">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="pastel" color="info">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="pastel" color="warning">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="pastel" color="danger">\n      Button\n    </BaseButton>\n  </div>\n</template>\n';
+
+export { pastel as default };

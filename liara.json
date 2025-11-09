@@ -2,7 +2,7 @@
     "disks": [
         {
             "name": "prisma",
-            "mountTo": ".demo/prisma/migrations"
+            "mountTo": "prisma/migrations"
         }
     ],
     "node": {

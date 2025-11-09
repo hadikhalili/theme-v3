@@ -1,0 +1,3 @@
+const group = '<template>\n  <BaseButtonGroup>\n    <BaseButton color="default">\n      <Icon name="lucide:edit-3" class="-ms-1 size-3" />\n\n      <span>Edit</span>\n    </BaseButton>\n\n    <BaseButton color="default">\n      <Icon name="lucide:eye" class="-ms-1 size-3" />\n\n      <span>\u0646\u0645\u0627\u06CC\u0634</span>\n    </BaseButton>\n\n    <BaseButton color="primary">\n      <Icon name="lucide:box" class="-ms-1 size-3" />\n\n      <span>Stash</span>\n    </BaseButton>\n\n    <BaseButton color="default">\n      <Icon name="lucide:share-2" class="-ms-1 size-3" />\n\n      <span>\u0627\u0634\u062A\u0631\u0627\u06A9\u200C\u06AF\u0630\u0627\u0631\u06CC</span>\n    </BaseButton>\n  </BaseButtonGroup>\n</template>\n';
+
+export { group as default };

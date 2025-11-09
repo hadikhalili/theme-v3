@@ -1,0 +1,1 @@
+import{d as t,c as o,e as n,g as a,bQ as _}from"./IEdULTv5.js";/* empty css        */const u=t({__name:"layouts",setup(c){return(s,r)=>{const e=_;return o(),n("div",null,[a(e)])}}});export{u as default};

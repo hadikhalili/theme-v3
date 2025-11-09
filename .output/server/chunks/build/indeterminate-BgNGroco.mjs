@@ -1,0 +1,3 @@
+const indeterminate = '<template>\n  <div class="max-w-xs space-y-4">\n    <BaseProgress\n      title="indeterminate primary progress bar"\n      size="sm"\n      color="primary"\n    />\n\n    <BaseProgress\n      title="indeterminate success progress bar"\n      size="sm"\n      color="success"\n    />\n\n    <BaseProgress\n      title="indeterminate info progress bar"\n      size="sm"\n      color="info"\n    />\n\n    <BaseProgress\n      title="indeterminate warning progress bar"\n      size="sm"\n      color="warning"\n    />\n\n    <BaseProgress\n      title="indeterminate danger progress bar"\n      size="sm"\n      color="danger"\n    />\n  </div>\n</template>\n';
+
+export { indeterminate as default };

@@ -1,0 +1,3 @@
+const disabled = '<template>\n  <div class="flex flex-wrap items-end gap-2">\n    <BaseButtonIcon rounded="none" disabled>\n      <Icon name="ph:moon-duotone" class="size-5" />\n    </BaseButtonIcon>\n\n    <BaseButtonIcon rounded="sm" disabled>\n      <Icon name="ph:github-logo-duotone" class="size-5" />\n    </BaseButtonIcon>\n\n    <BaseButtonIcon rounded="md" disabled>\n      <Icon name="ph:game-controller-duotone" class="size-5" />\n    </BaseButtonIcon>\n\n    <BaseButtonIcon rounded="lg" disabled>\n      <Icon name="ph:alien-duotone" class="size-5" />\n    </BaseButtonIcon>\n\n    <BaseButtonIcon rounded="full" disabled>\n      <Icon name="ph:heart-duotone" class="size-5" />\n    </BaseButtonIcon>\n  </div>\n</template>\n';
+
+export { disabled as default };

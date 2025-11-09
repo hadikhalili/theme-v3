@@ -1,0 +1,3 @@
+const types = '<template>\n  <div class="grid max-w-2xl grid-cols-1 gap-4 md:grid-cols-2">\n    <BaseMessage>\u06CC\u06A9 \u067E\u06CC\u0627\u0645 \u0645\u0648\u0641\u0642.</BaseMessage>\n\n    <BaseMessage color="info">\n      \u06CC\u06A9 \u067E\u06CC\u0627\u0645 \u0627\u0637\u0644\u0627\u0639\u0627\u062A\u06CC.\n    </BaseMessage>\n\n    <BaseMessage color="warning">\n      \u06CC\u06A9 \u067E\u06CC\u0627\u0645 \u0647\u0634\u062F\u0627\u0631.\n    </BaseMessage>\n\n    <BaseMessage color="danger">\n      \u06CC\u06A9 \u067E\u06CC\u0627\u0645 \u0645\u062E\u0631\u0628.\n    </BaseMessage>\n  </div>\n</template>\n';
+
+export { types as default };

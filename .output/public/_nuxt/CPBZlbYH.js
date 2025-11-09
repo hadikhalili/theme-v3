@@ -1,0 +1,1 @@
+import{d as e,c as t,e as o,f as s}from"./IEdULTv5.js";/* empty css        */const n=s("h1",null,"خطای آزمایشی",-1),r=[n],d=e({__name:"test-error",setup(a){return(c,_)=>(t(),o("div",null,r))}});export{d as default};

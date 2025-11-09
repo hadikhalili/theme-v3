@@ -1,0 +1,3 @@
+const success = '<template>\n  <div class="flex flex-wrap items-end gap-2">\n    <BaseButtonAction rounded="none" color="success">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="sm" color="success">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="md" color="success">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="lg" color="success">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="full" color="success">\n      Action\n    </BaseButtonAction>\n  </div>\n</template>\n';
+
+export { success as default };

@@ -1,0 +1,3 @@
+const shadowHover = '<template>\n  <div class="flex flex-wrap items-end gap-4">\n    <BaseButton shadow="hover">\n      Button\n    </BaseButton>\n\n    <BaseButton color="primary" shadow="hover">\n      Button\n    </BaseButton>\n\n    <BaseButton color="success" shadow="hover">\n      Button\n    </BaseButton>\n\n    <BaseButton color="info" shadow="hover">\n      Button\n    </BaseButton>\n\n    <BaseButton color="warning" shadow="hover">\n      Button\n    </BaseButton>\n\n    <BaseButton color="danger" shadow="hover">\n      Button\n    </BaseButton>\n  </div>\n</template>\n';
+
+export { shadowHover as default };

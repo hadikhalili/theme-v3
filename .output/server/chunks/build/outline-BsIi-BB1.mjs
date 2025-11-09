@@ -1,0 +1,3 @@
+const outline = '<template>\n  <div class="flex flex-wrap items-end gap-2">\n    <BaseButton variant="outline">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="outline" color="muted">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="outline" color="primary">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="outline" color="success">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="outline" color="info">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="outline" color="warning">\n      Button\n    </BaseButton>\n\n    <BaseButton variant="outline" color="danger">\n      Button\n    </BaseButton>\n  </div>\n</template>\n';
+
+export { outline as default };

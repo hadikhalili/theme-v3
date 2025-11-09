@@ -1,0 +1,3 @@
+const sizes = '<template>\n  <div class="max-w-xs space-y-4">\n    <BaseProgress\n      title="xs progress bar"\n      size="xs"\n      :value="78"\n      color="primary"\n    />\n\n    <BaseProgress\n      title="sm progress bar"\n      size="sm"\n      :value="78"\n      color="primary"\n    />\n\n    <BaseProgress\n      title="md progress bar"\n      size="md"\n      :value="78"\n      color="primary"\n    />\n\n    <BaseProgress\n      title="lg progress bar"\n      size="lg"\n      :value="78"\n      color="primary"\n    />\n\n    <BaseProgress\n      title="xl progress bar"\n      size="xl"\n      :value="78"\n      color="primary"\n    />\n  </div>\n</template>\n';
+
+export { sizes as default };

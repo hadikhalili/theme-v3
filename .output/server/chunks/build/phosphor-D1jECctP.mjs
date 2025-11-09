@@ -1,0 +1,3 @@
+const phosphor = '<template>\n  <div class="flex items-end gap-4">\n    <Icon name="ph:crown-duotone" class="text-muted-400 dark:text-muted-500 block size-6" />\n\n    <Icon name="ph:crown-duotone" class="text-muted-400 dark:text-muted-500 block size-7" />\n\n    <Icon name="ph:crown-duotone" class="text-muted-400 dark:text-muted-500 block size-8" />\n\n    <Icon name="ph:crown-duotone" class="text-muted-400 dark:text-muted-500 block size-9" />\n\n    <Icon name="ph:crown-duotone" class="text-muted-400 dark:text-muted-500 block size-10" />\n\n    <Icon name="ph:crown-duotone" class="block size-12 text-yellow-500" />\n  </div>\n</template>\n';
+
+export { phosphor as default };

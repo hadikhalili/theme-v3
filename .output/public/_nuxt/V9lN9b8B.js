@@ -1,0 +1,1 @@
+import{M as e,c as o,e as c,g as n,cs as s}from"./IEdULTv5.js";/* empty css        */const t={};function a(_,f){const r=s;return o(),c("div",null,[n(r,{error:"An error has occured"})])}const d=e(t,[["render",a]]);export{d as default};

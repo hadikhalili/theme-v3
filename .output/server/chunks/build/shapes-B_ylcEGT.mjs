@@ -1,0 +1,3 @@
+const shapes = '<template>\n  <div class="flex flex-wrap items-end gap-2">\n    <BaseButtonIcon rounded="none">\n      <Icon name="ph:moon-duotone" class="size-5" />\n    </BaseButtonIcon>\n\n    <BaseButtonIcon rounded="sm">\n      <Icon name="ph:github-logo-duotone" class="size-5" />\n    </BaseButtonIcon>\n\n    <BaseButtonIcon rounded="md">\n      <Icon name="ph:game-controller-duotone" class="size-5" />\n    </BaseButtonIcon>\n\n    <BaseButtonIcon rounded="lg">\n      <Icon name="ph:alien-duotone" class="size-5" />\n    </BaseButtonIcon>\n\n    <BaseButtonIcon rounded="full">\n      <Icon name="ph:heart-duotone" class="size-5" />\n    </BaseButtonIcon>\n  </div>\n</template>\n';
+
+export { shapes as default };

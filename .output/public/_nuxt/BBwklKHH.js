@@ -1,0 +1,1 @@
+import{_ as t}from"./B-ahLtn6.js";import{r as o}from"./Lb8tNqB9.js";import{M as a,c as r,O as c,w as n,f as _}from"./IEdULTv5.js";import"./nBvaaqy8.js";/* empty css        */const f={},i={class:"text-xs"};function m(e,p){const s=t;return r(),c(s,null,{default:n(()=>[_("div",i,[o(e.$slots,"default",{unwrap:"p"})])]),_:3})}const h=a(f,[["render",m]]);export{h as default};

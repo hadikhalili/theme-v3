@@ -1,0 +1,1 @@
+import{d as n,ad as s,c as o,e as r,g as c,w as _,h as p,i,q as l}from"./IEdULTv5.js";/* empty css        */const B=n({__name:"search",setup(m){const{open:t}=s();return(u,e)=>{const a=l;return o(),r("div",null,[c(a,{onClick:e[0]||(e[0]=d=>i(t)("search"))},{default:_(()=>[p(" باز کردن پنل ")]),_:1})])}}});export{B as default};

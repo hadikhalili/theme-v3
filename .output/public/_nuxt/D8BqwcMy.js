@@ -1,0 +1,1 @@
+import{as as i,z as u,r as l}from"./IEdULTv5.js";const t=new WeakMap;function f(s){const o=i(s);return u(()=>{const e=o.value;if(!e)return"";if(t.has(e))return t.get(e)?.value;const r=new FileReader,n=l(""),a=()=>{n.value=r.result?.toString()??"",r.removeEventListener("load",a)};return r.addEventListener("load",a),r.readAsDataURL(e),t.set(e,n),t.get(e)?.value})}export{f as u};

@@ -1,0 +1,3 @@
+const primary = '<template>\n  <div class="flex flex-wrap items-end gap-2">\n    <BaseButtonAction rounded="none" color="primary">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="sm" color="primary">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="md" color="primary">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="lg" color="primary">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="full" color="primary">\n      Action\n    </BaseButtonAction>\n  </div>\n</template>\n';
+
+export { primary as default };

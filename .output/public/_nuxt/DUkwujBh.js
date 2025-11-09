@@ -1,0 +1,1 @@
+import{d as t,c as a,O as o,w as s,f as n,c0 as c}from"./IEdULTv5.js";/* empty css        */const _=n("div",null,null,-1),m=t({__name:"starter-collapse",setup(l){return(r,p)=>{const e=c;return a(),o(e,null,{default:s(()=>[_]),_:1})}}});export{m as default};

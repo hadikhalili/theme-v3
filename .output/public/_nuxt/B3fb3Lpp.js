@@ -1,0 +1,1 @@
+import{M as r,c as t,e as o,N as s}from"./IEdULTv5.js";/* empty css        */const c={};function n(e,a){return t(),o("td",null,[s(e.$slots,"default")])}const f=r(c,[["render",n]]);export{f as default};

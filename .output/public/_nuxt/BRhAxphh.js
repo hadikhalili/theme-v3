@@ -1,0 +1,1 @@
+import{M as e,c as r,e as o}from"./IEdULTv5.js";/* empty css        */const t={},c={class:"border-muted-200 dark:border-muted-700"};function s(n,a){return r(),o("hr",c)}const m=e(t,[["render",s]]);export{m as default};

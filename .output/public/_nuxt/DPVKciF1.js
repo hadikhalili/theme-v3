@@ -1,0 +1,1 @@
+import{d as a,cd as o,c as n,O as s,w as r,N as c,at as u,i as l}from"./IEdULTv5.js";/* empty css        */const f=a({__name:"default",setup(p){const{activeLayoutComponent:e}=o();return(t,i)=>(n(),s(u(l(e)),null,{default:r(()=>[c(t.$slots,"default")]),_:3}))}});export{f as default};

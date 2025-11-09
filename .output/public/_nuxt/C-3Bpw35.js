@@ -1,0 +1,1 @@
+import{_ as o}from"./DHv-LMOe.js";import{M as s,c as r,O as a,w as c,N as n}from"./IEdULTv5.js";/* empty css        */const _={};function f(t,i){const e=o;return r(),a(e,null,{default:c(()=>[n(t.$slots,"default")]),_:3})}const d=s(_,[["render",f]]);export{d as default};

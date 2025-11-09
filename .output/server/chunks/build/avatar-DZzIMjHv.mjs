@@ -1,0 +1,3 @@
+const avatar = '<template>\n  <div class="flex flex-wrap items-end gap-2">\n    <BaseAvatar\n      src="/img/avatars/3.svg"\n      size="lg"\n      data-nui-tooltip="\u06A9\u0644\u0627\u0631\u06A9 \u0645\u06CC\u0644\u0631"\n    />\n\n    <BaseAvatar\n      src="/img/avatars/17.svg"\n      size="lg"\n      data-nui-tooltip="\u0628\u0631\u06CC \u0648\u0633\u062A\u0648\u0646"\n    />\n\n    <BaseAvatar\n      src="/img/avatars/16.svg"\n      size="lg"\n      data-nui-tooltip="\u06A9\u0627\u0631\u0644\u0648\u0633 \u067E\u0631\u0632"\n    />\n\n    <BaseAvatar\n      src="/img/avatars/15.svg"\n      size="lg"\n      data-nui-tooltip="\u0622\u0644\u0628\u0631\u062A \u0648\u0633\u06A9\u0631"\n    />\n  </div>\n</template>\n';
+
+export { avatar as default };

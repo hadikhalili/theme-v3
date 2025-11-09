@@ -1,0 +1,524 @@
+import { _ as _sfc_main$1 } from './BaseIconBox-Cgm-LP3M.mjs';
+import { i as _export_sfc, a as __nuxt_component_2 } from './server.mjs';
+import { mergeProps, withCtx, createVNode, useSSRContext } from 'vue';
+import { ssrRenderAttrs, ssrRenderComponent } from 'vue/server-renderer';
+import '../runtime.mjs';
+import 'node:http';
+import 'node:https';
+import 'fs';
+import 'path';
+import 'node:fs';
+import 'node:url';
+import 'unified';
+import 'mdast-util-to-string';
+import 'micromark';
+import 'unist-util-stringify-position';
+import 'micromark-util-character';
+import 'micromark-util-chunked';
+import 'micromark-util-resolve-all';
+import 'micromark-util-sanitize-uri';
+import 'slugify';
+import 'remark-parse';
+import 'remark-rehype';
+import 'remark-mdc';
+import 'hast-util-to-string';
+import 'github-slugger';
+import 'detab';
+import 'remark-emoji';
+import 'remark-gfm';
+import 'rehype-external-links';
+import 'rehype-sort-attribute-values';
+import 'rehype-sort-attributes';
+import 'rehype-raw';
+import 'ipx';
+import '../routes/renderer.mjs';
+import 'vue-bundle-renderer/runtime';
+import 'devalue';
+import '@unhead/ssr';
+import 'unhead';
+import '@unhead/shared';
+import 'vue-router';
+import 'notivue';
+import '@headlessui/vue';
+import '@iconify/vue/dist/offline';
+import '@iconify/vue';
+import '@vue/shared';
+import 'chroma-js';
+import 'tailwindcss/colors.js';
+
+const _sfc_main = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_BaseIconBox = _sfc_main$1;
+  const _component_Icon = __nuxt_component_2;
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-wrap items-end gap-4" }, _attrs))}>`);
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "border-muted-200 dark:border-muted-600 dark:bg-muted-700 border bg-white text-gray-500"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:nut-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:nut-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-gray-200 text-gray-500 dark:bg-gray-800"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:cat-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:cat-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-primary-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:ghost-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:ghost-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-lime-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:club-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:club-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-green-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:leaf-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:leaf-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-emerald-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:mountains-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:mountains-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-teal-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:paint-brush-broad-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:paint-brush-broad-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-cyan-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:rocket-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:rocket-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-sky-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:popcorn-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:popcorn-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-blue-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:flask-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:flask-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-indigo-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:drop-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:drop-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-purple-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:image-square-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:image-square-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-fuchsia-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:piano-keys-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:piano-keys-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-pink-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:hand-waving-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:hand-waving-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-rose-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:lock-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:lock-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-red-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:lightning-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:lightning-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-orange-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:pizza-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:pizza-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-amber-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:sun-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:sun-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-yellow-500 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:sketch-logo-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:sketch-logo-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(ssrRenderComponent(_component_BaseIconBox, {
+    size: "md",
+    rounded: "lg",
+    color: "none",
+    class: "bg-muted-800 text-white"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Icon, {
+          name: "ph:moon-duotone",
+          class: "size-5"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Icon, {
+            name: "ph:moon-duotone",
+            class: "size-5"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</div>`);
+}
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../layers/documentation/examples/iconbox/solid.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const solid = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+
+export { solid as default };

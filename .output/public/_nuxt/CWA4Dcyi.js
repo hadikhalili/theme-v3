@@ -1,0 +1,1 @@
+import{M as c,c as o,e as a,g as s,ai as n}from"./IEdULTv5.js";/* empty css        */const t={},r={class:"flex flex-wrap items-end gap-2"};function _(l,d){const e=n;return o(),a("div",r,[s(e,{class:"size-10 rounded"}),s(e,{class:"size-12 rounded-xl"}),s(e,{class:"size-16 rounded-full"})])}const f=c(t,[["render",_]]);export{f as default};

@@ -1,0 +1,1 @@
+import{p as s}from"./IEdULTv5.js";const l=s("/img/illustrations/placeholders/flat/placeholder-search-4.svg"),r=s("/img/illustrations/placeholders/flat/placeholder-search-4-dark.svg");export{l as _,r as a};

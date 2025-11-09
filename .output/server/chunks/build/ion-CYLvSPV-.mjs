@@ -1,0 +1,3 @@
+const ion = '<template>\n  <div class="flex items-end gap-4">\n    <Icon name="ion:gift-outline" class="text-muted-400 dark:text-muted-500 block size-6" />\n\n    <Icon name="ion:gift-outline" class="text-muted-400 dark:text-muted-500 block size-7" />\n\n    <Icon name="ion:gift-outline" class="text-muted-400 dark:text-muted-500 block size-8" />\n\n    <Icon name="ion:gift-outline" class="text-muted-400 dark:text-muted-500 block size-9" />\n\n    <Icon name="ion:gift-outline" class="text-muted-400 dark:text-muted-500 block size-10" />\n\n    <Icon name="ion:gift-outline" class="block size-12 text-pink-500" />\n  </div>\n</template>\n';
+
+export { ion as default };

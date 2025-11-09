@@ -1,0 +1,1 @@
+import{d as t,ad as o,c as s,e as r,g as c,w as l,h as u,i as _,q as p}from"./IEdULTv5.js";/* empty css        */const x=t({__name:"language",setup(i){const{open:a}=o();return(m,e)=>{const n=p;return s(),r("div",null,[c(n,{onClick:e[0]||(e[0]=d=>_(a)("language"))},{default:l(()=>[u(" باز کردن پنل ")]),_:1})])}}});export{x as default};

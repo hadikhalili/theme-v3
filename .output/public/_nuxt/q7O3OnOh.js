@@ -1,0 +1,1 @@
+import{d as t,c as a,O as o,w as s,f as n,bZ as r}from"./IEdULTv5.js";/* empty css        */const _=n("div",null,null,-1),u=t({__name:"starter-sidebar",setup(c){return(i,l)=>{const e=r;return a(),o(e,null,{default:s(()=>[_]),_:1})}}});export{u as default};

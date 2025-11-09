@@ -1,0 +1,3 @@
+const masks = '<template>\n  <div class="flex flex-wrap items-end gap-4">\n    <BaseAvatar\n      src="/img/avatars/25.svg"\n      rounded="none"\n      mask="hex"\n      size="xl"\n    />\n\n    <BaseAvatar\n      src="/img/avatars/10.svg"\n      rounded="none"\n      mask="hexed"\n      size="xl"\n    />\n\n    <BaseAvatar\n      src="/img/avatars/16.svg"\n      rounded="none"\n      mask="deca"\n      size="xl"\n    />\n\n    <BaseAvatar\n      src="/img/avatars/5.svg"\n      rounded="none"\n      mask="blob"\n      size="xl"\n    />\n\n    <BaseAvatar\n      src="/img/avatars/24.svg"\n      rounded="none"\n      mask="diamond"\n      size="xl"\n    />\n  </div>\n</template>\n';
+
+export { masks as default };

@@ -1,0 +1,4 @@
+// ROLLUP_NO_REPLACE 
+ const _1_index = "{\"parsed\":{\"_path\":\"/documentation/guides\",\"_dir\":\"documentation\",\"_draft\":false,\"_partial\":false,\"_locale\":\"\",\"title\":\"\",\"description\":\"Redirecting to panels...\",\"navigation\":false,\"redirect\":\"/documentation/guides/panels\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Redirecting to \"},{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"/documentation/guides/panels\"},\"children\":[{\"type\":\"text\",\"value\":\"panels\"}]},{\"type\":\"text\",\"value\":\"...\"}]}],\"toc\":{\"title\":\"\",\"searchDepth\":2,\"depth\":2,\"links\":[]}},\"_type\":\"markdown\",\"_id\":\"content:documentation:50.guides:1.index.md\",\"_source\":\"content\",\"_file\":\"documentation/50.guides/1.index.md\",\"_extension\":\"md\"},\"hash\":\"W9mT23Lebe\"}";
+
+export { _1_index as default };

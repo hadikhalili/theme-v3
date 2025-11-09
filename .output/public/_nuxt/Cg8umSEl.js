@@ -1,0 +1,1 @@
+import{_ as t}from"./D90ecKlw.js";import{M as o,c as a,O as r,w as c,N as n}from"./IEdULTv5.js";/* empty css        */const _={};function f(e,i){const s=t;return a(),r(s,{media:!1},{default:c(()=>[n(e.$slots,"default")]),_:3})}const p=o(_,[["render",f]]);export{p as default};

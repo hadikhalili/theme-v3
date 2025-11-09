@@ -1,0 +1,1 @@
+import{M as s,c as o,e as t,g as c,ai as a}from"./IEdULTv5.js";/* empty css        */const n={},_={class:"max-w-sm space-y-2"};function r(d,l){const e=a;return o(),t("div",_,[c(e,{class:"h-4 w-full rounded"}),c(e,{class:"h-4 w-[85%] rounded"})])}const f=s(n,[["render",r]]);export{f as default};

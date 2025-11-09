@@ -1,0 +1,3 @@
+const colors = '<template>\n  <div class="max-w-xs space-y-4">\n    <BaseProgress\n      title="primary progress bar"\n      size="sm"\n      :value="78"\n      color="primary"\n    />\n\n    <BaseProgress\n      title="success progress bar"\n      size="sm"\n      :value="78"\n      color="success"\n    />\n\n    <BaseProgress\n      title="info progress bar"\n      size="sm"\n      :value="78"\n      color="info"\n    />\n\n    <BaseProgress\n      title="warning progress bar"\n      size="sm"\n      :value="78"\n      color="warning"\n    />\n\n    <BaseProgress\n      title="danger progress bar"\n      size="sm"\n      :value="78"\n      color="danger"\n    />\n  </div>\n</template>\n';
+
+export { colors as default };

@@ -1,0 +1,3 @@
+const warning = '<template>\n  <div class="flex flex-wrap items-end gap-2">\n    <BaseButtonAction rounded="none" color="warning">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="sm" color="warning">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="md" color="warning">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="lg" color="warning">\n      Action\n    </BaseButtonAction>\n\n    <BaseButtonAction rounded="full" color="warning">\n      Action\n    </BaseButtonAction>\n  </div>\n</template>\n';
+
+export { warning as default };

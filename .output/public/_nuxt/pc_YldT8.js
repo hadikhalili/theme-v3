@@ -1,0 +1,1 @@
+import{M as o,c as t,e as r,N as c}from"./IEdULTv5.js";/* empty css        */const s={};function n(e,l){return t(),r("blockquote",null,[c(e.$slots,"default")])}const u=o(s,[["render",n]]);export{u as default};
