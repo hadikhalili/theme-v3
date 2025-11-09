@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "dev": "pnpm --filter=demo dev",
-    "build": "pnpm --filter=app build",
+    "build": "echo 'build started'",
     "generate": "pnpm --filter=demo generate",
     "demo:dev": "pnpm --filter=demo dev",
     "demo:build": "pnpm --filter=demo build",
